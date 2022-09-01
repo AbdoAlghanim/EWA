@@ -19,6 +19,7 @@
   }
 .outside-wrapper{
     background-color: var(--bgc);
+    margin-bottom: 150px;
 }
 .ewa-text{
     font-weight: 1000;
@@ -108,16 +109,18 @@
     margin: 15px;
     flex: 1;
     gap: 10px;
-    max-width: 65%;
-    max-height: 40%;
+    max-width: 70%;
+    height: 65%;
+    max-height: 60%;
     
 }
 .hero-paragraph h2{
     flex: 1;
-    margin-bottom: 10px;
+    margin-bottom: 10vh;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 40px;
     text-align: left;
+    max-height: 100%;
 }
 .hero-paragraph p{
     text-align: left;
@@ -267,8 +270,9 @@ card {
         margin: 20px;
         min-width: 99%;
         padding: 0;
-        min-height: 80vh;
+        min-height: 60vh;
         margin-inline: 0;
+        margin-bottom: 10px;
     }
     .inside-wrapper{
         margin: 0;
@@ -302,15 +306,18 @@ card {
     }
     /* Hero Section */
     .hero-text{
+        margin: 0;
         margin-inline: 0;
+        padding: 0;
     }
     .upper-body{
+        padding: 0;
         flex: 1;
         justify-self: center;
         align-self: center;
         justify-content: center;
         align-items: center;
-        margin-top: 2vh;
+        margin: 0;
         height: fit-content;
     }
     .img-wrapper{
@@ -323,12 +330,15 @@ card {
         flex: 1;
         justify-content: center;
         text-align: center;
-        margin-top: 60px;
+        padding: 0;
+        margin-top: -40px;
+        
     }
     .hero-paragraph h2{
-        font-size: 20px;
+        font-size: 21px !important; 
         align-self: center;
         text-align: center;
+        font-weight: bold;
     }
     .hero-paragraph p{
         font-size: 15px;
@@ -411,4 +421,15 @@ card {
         }
         
     }
+    
+}
+@media (max-width: 1200px) {
+    .hero-paragraph h2{
+        max-height: 50%;
+        font-size: 31px;
+    }
+   .outside-wrapper{
+    margin-bottom: 100px;
+   }
+    
 }
