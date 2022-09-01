@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+:root {
+    --bgc: white;
+    --fc: #000000;
+    --bgc-beige: hsla(31, 24%, 62%, 0.699);
+    --header-text-size : 24px;
+    --links-size: 18px;
+    --button-bgc: #3882F6;
+    --quote-font-color : #E5E7EB;
+    --beige-fc : #E4EAF3;
+    --beige-fc-border:#a7a8a8de;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.outside-wrapper{
+    background-color: var(--bgc);
+}
+.ewa-text{
+    font-weight: 1000;
+}
+.inside-wrapper{
+    margin-right: 17vw ;
+    margin-left: 17vw;
+    height: 60vh;
+    padding-top: 40px;
+}
+.linear-grad {
+    background-image: linear-gradient(white,#B59F87);
+    height: 16vh;
+    width: 100vw;
+    opacity: .7;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+/* Header Section */
+.header {
+    display: flex;
+    background-color: var(--bgc);
+    color: var(--fc);
+    height: 12px;
+    justify-content: flex-end;
+}
+.header-text {
+    flex: 1;
+    font-size: var(--header-text-size);
+    margin: 10px;
+    
+}
+.header-text h1{
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.links-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  
+}
+.links-container div {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: var(--links-size);
+    
+}
+.links-container a{
+    color: var(--fc);
+    text-decoration: none;
+    
+}
+
+/* Hero Section */
+.upper-body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bgc);
+    color: var(--fc);
+    height: 40vh;
+    margin-top: 5vh;
+}
+.hero-wrapper {
+    margin-top: 4.5em;
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.hero-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    
+}
+.hero-paragraph{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    flex: 1;
+    gap: 10px;
+    max-width: 65%;
+    max-height: 40%;
+    
+}
+.hero-paragraph h2{
+    flex: 1;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 34px;
+    text-align: left;
+}
+.hero-paragraph p{
+    text-align: left;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 20px;
+
+}
+/* Card portion */
+.lower-body h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+.lower-body{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    align-items: center;
+}
+.beige-wrapper {
+    background-color: var(--bgc-beige);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-top: -5px;
+    width: 100vw;
+    
+}
+.card-container{
+    flex: 1;
+    display: flex;
+    width: 80vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    gap: 20px;
+}
+.placeholder-sqaure{
+    flex: 1;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    border: 6px solid var(--beige-fc-border);
+    background-color: var(--beige-fc);
+    margin: 20px;
+}
+.card p{
+    text-align: center;
+    margin: auto;
+    opacity: .5;
+    max-width: 180px;
+}
+/* quote portion */
+.quote {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quote-font-color);
+}
+.quote em{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 20px;
+    max-width: 80vw;
+}
+.quote p{
+    position: absolute;
+    margin-bottom: 80px;
+    align-self: flex-end;
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: bold;
+    transform: translate(140%, 230%);
+}
+/* Sign up blue thing */
+.sign-up-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sign-up{
+    flex: 1;
+    display: flex;
+    max-width: 80%;
+    height: 15vh;
+    margin: 80px;
+    background-color: var(--button-bgc);
+    border-radius: 10px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: var(--fc);
+    padding: 20px;
+}
+.sign-up button{
+    flex: 1;
+    margin: 1em;
+    color: var(--fc);
+    border-style: solid;
+    border-color: white;
+    font-size: 18px;
+    padding: 5px;
+    max-width: 10%;
+    background-color: #3882F6;
+    border-radius: 8px;
+}
+.sign-up-text{
+    text-decoration: none;
+}
+.sign-up-text h1{
+    flex: 1;
+    text-align: start;
+}
+.sign-up-text p{
+    text-align: start;
+}
+/* Footer */
+.footer{
+    display: flex;
+    width: 100%;
+    background-color:#E4EAF3;
+    height: 100px;
+    color: var(--fc);
+    justify-content: center;
+    align-items: center;
+}
+@media screen  and (max-width:1000px) {
+    
+    .outside-wrapper{
+        max-height: fit-content;
+        margin: 20px;
+        min-width: 99%;
+        padding: 0;
+        min-height: 80vh;
+        margin-inline: 0;
+    }
+    .inside-wrapper{
+        margin: 0;
+        margin-inline: 0px;
+        max-height: 400px;
+    }
+    /* Header */
+    .header{
+        margin: 0;
+        padding: 0;
+        min-width: 300px;
+        margin-top: 10px;
+    }
+    .header-text{
+        margin: 0;
+        padding: 0;
+    }
+    .header-text h1{
+        margin: 0;
+        padding: 0;
+        text-align: start;
+        justify-self: flex-start;
+        align-self: center;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .links-container{
+        display: none;
+    }
+    /* Hero Section */
+    .hero-text{
+        margin-inline: 0;
+    }
+    .upper-body{
+        flex: 1;
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vh;
+        height: fit-content;
+    }
+    .img-wrapper{
+        display: none;
+    }
+    .hero-wrapper{
+        max-height: fit-content;
+    }
+    .hero-paragraph{
+        flex: 1;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .hero-paragraph h2{
+        font-size: 20px;
+        align-self: center;
+        text-align: center;
+    }
+    .hero-paragraph p{
+        font-size: 15px;
+    }
+    
+    .hero-paragraph button{
+        margin: 0;
+        margin-top: 2em;
+        width: 60%;
+        height: 40px;
+
+    }
+    /* Card Section */
+    .lower-body h2{
+        text-align: center;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    /* Quote Section */
+    .quote{
+        display: flex;
+        min-height: 15vh;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .quote em{
+        flex: 1;
+        font-size: 22px;
+        margin: 0;
+        padding:0;
+        text-align: center;
+        text-justify: center;
+    }
+    .quote p{
+        display: none;
+        visibility: hidden;
+    }
+    .citation{
+        position: relative;
+        display: none;
+        visibility: hidden;
+    }
+    /* Sign up Section */
+    .sign-up-wrapper{
+        min-width: 90vw;
+        margin: 0px;
+        padding: 0px;
+        margin-inline: 0px;
+    }
+    .sign-up{
+        min-width: 83vw;
+        margin-inline: 0;
+        padding: 0;
+        padding-inline: 15px;
+    }
+    .sign-up h1{
+        margin: 0px;
+        font-size: 18px;
+    }
+    .sign-up p{
+        font-size: 12px;
+
+    }
+    .sign-up button{
+        min-width: 18%;
+        min-height: 20%;
+        font-size: 10px;
+        margin: 0;
+        font-weight: bold;
+    }
+    @media screen and (max-height:1024px) and (min-height:770px) {
+        .inside-wrapper{
+            min-height: 440px;
+        }
+        .hero-text{
+            margin-top: 20px;
+        }
+        
+    }
+}
